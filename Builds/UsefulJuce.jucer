@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="sJLFh9" name="UsefulJuce" projectType="guiapp" version="1.0.0"
+              bundleIdentifier="com.yourcompany.UsefulJuce" includeBinaryInAppConfig="1"
+              jucerVersion="3.1.1">
+  <MAINGROUP id="N2aaWU" name="UsefulJuce">
+    <GROUP id="{E1623DCC-704C-F40F-5DA0-A472EE39183D}" name="Source">
+      <FILE id="xdED2x" name="MainWindow.h" compile="0" resource="0" file="../Source/MainWindow.h"/>
+      <FILE id="RjAJZ1" name="Main.cpp" compile="1" resource="0" file="../Source/Main.cpp"/>
+      <FILE id="l4L4B4" name="MainComponent.cpp" compile="1" resource="0"
+            file="../Source/MainComponent.cpp"/>
+      <FILE id="xAJtLG" name="MainComponent.h" compile="0" resource="0" file="../Source/MainComponent.h"/>
+      <GROUP id="{9F127D8C-1D59-477D-017F-9064E53DB704}" name="CustomizedWindows"/>
+      <GROUP id="{6C704101-946C-3116-9B59-AB67452B9287}" name="GraphComponent"/>
+      <GROUP id="{188EC122-BC88-CDC3-5286-5FC13544D0AC}" name="LogComponent">
+        <FILE id="n0dr2l" name="AppLogger.cpp" compile="1" resource="0" file="../Source/LogComponent/AppLogger.cpp"/>
+        <FILE id="GWC0Ft" name="AppLogger.h" compile="0" resource="0" file="../Source/LogComponent/AppLogger.h"/>
+        <FILE id="enryQu" name="LogComponent.cpp" compile="1" resource="0"
+              file="../Source/LogComponent/LogComponent.cpp"/>
+        <FILE id="I91wJ5" name="LogComponent.h" compile="0" resource="0" file="../Source/LogComponent/LogComponent.h"/>
+      </GROUP>
+    </GROUP>
+  </MAINGROUP>
+  <EXPORTFORMATS>
+    <VS2010 targetFolder="VisualStudio2010">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" winWarningLevel="4" generateManifest="1" winArchitecture="32-bit"
+                       isDebug="1" optimisation="1" targetName="UsefulJuce"/>
+        <CONFIGURATION name="Release" winWarningLevel="4" generateManifest="1" winArchitecture="32-bit"
+                       isDebug="0" optimisation="2" targetName="UsefulJuce"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="D:\MasterRepo\JUCE\modules"/>
+        <MODULEPATH id="juce_events" path="D:\MasterRepo\JUCE\modules"/>
+        <MODULEPATH id="juce_graphics" path="D:\MasterRepo\JUCE\modules"/>
+        <MODULEPATH id="juce_data_structures" path="D:\MasterRepo\JUCE\modules"/>
+        <MODULEPATH id="juce_gui_basics" path="D:\MasterRepo\JUCE\modules"/>
+        <MODULEPATH id="juce_gui_extra" path="D:\MasterRepo\JUCE\modules"/>
+        <MODULEPATH id="juce_cryptography" path="D:\MasterRepo\JUCE\modules"/>
+        <MODULEPATH id="juce_video" path="D:\MasterRepo\JUCE\modules"/>
+        <MODULEPATH id="juce_opengl" path="D:\MasterRepo\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_basics" path="D:\MasterRepo\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_devices" path="D:\MasterRepo\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_formats" path="D:\MasterRepo\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_processors" path="D:\MasterRepo\JUCE\modules"/>
+      </MODULEPATHS>
+    </VS2010>
+    <LINUX_MAKE targetFolder="Linux">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" libraryPath="/usr/X11R6/lib/" isDebug="1" optimisation="1"
+                       targetName="UsefulJuce"/>
+        <CONFIGURATION name="Release" libraryPath="/usr/X11R6/lib/" isDebug="0" optimisation="2"
+                       targetName="UsefulJuce"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="D:\MasterRepo\JUCE\modules"/>
+        <MODULEPATH id="juce_events" path="D:\MasterRepo\JUCE\modules"/>
+        <MODULEPATH id="juce_graphics" path="D:\MasterRepo\JUCE\modules"/>
+        <MODULEPATH id="juce_data_structures" path="D:\MasterRepo\JUCE\modules"/>
+        <MODULEPATH id="juce_gui_basics" path="D:\MasterRepo\JUCE\modules"/>
+        <MODULEPATH id="juce_gui_extra" path="D:\MasterRepo\JUCE\modules"/>
+        <MODULEPATH id="juce_cryptography" path="D:\MasterRepo\JUCE\modules"/>
+        <MODULEPATH id="juce_video" path="D:\MasterRepo\JUCE\modules"/>
+        <MODULEPATH id="juce_opengl" path="D:\MasterRepo\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_basics" path="D:\MasterRepo\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_devices" path="D:\MasterRepo\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_formats" path="D:\MasterRepo\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_processors" path="D:\MasterRepo\JUCE\modules"/>
+      </MODULEPATHS>
+    </LINUX_MAKE>
+    <VS2013 targetFolder="VisualStudio2013">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" winWarningLevel="4" generateManifest="1" winArchitecture="32-bit"
+                       isDebug="1" optimisation="1" targetName="UsefulJuce"/>
+        <CONFIGURATION name="Release" winWarningLevel="4" generateManifest="1" winArchitecture="32-bit"
+                       isDebug="0" optimisation="2" targetName="UsefulJuce"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_video" path="D:\MasterRepo\JUCE\modules"/>
+        <MODULEPATH id="juce_opengl" path="D:\MasterRepo\JUCE\modules"/>
+        <MODULEPATH id="juce_gui_extra" path="D:\MasterRepo\JUCE\modules"/>
+        <MODULEPATH id="juce_gui_basics" path="D:\MasterRepo\JUCE\modules"/>
+        <MODULEPATH id="juce_graphics" path="D:\MasterRepo\JUCE\modules"/>
+        <MODULEPATH id="juce_events" path="D:\MasterRepo\JUCE\modules"/>
+        <MODULEPATH id="juce_data_structures" path="D:\MasterRepo\JUCE\modules"/>
+        <MODULEPATH id="juce_cryptography" path="D:\MasterRepo\JUCE\modules"/>
+        <MODULEPATH id="juce_core" path="D:\MasterRepo\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_processors" path="D:\MasterRepo\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_formats" path="D:\MasterRepo\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_devices" path="D:\MasterRepo\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_basics" path="D:\MasterRepo\JUCE\modules"/>
+      </MODULEPATHS>
+    </VS2013>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULES id="juce_audio_basics" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_audio_devices" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_audio_formats" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_audio_processors" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_core" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_cryptography" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_data_structures" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_events" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_graphics" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_gui_basics" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_gui_extra" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_opengl" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_video" showAllCode="1" useLocalCopy="0"/>
+  </MODULES>
+  <JUCEOPTIONS/>
+</JUCERPROJECT>
