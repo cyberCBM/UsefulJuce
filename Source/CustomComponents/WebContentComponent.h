@@ -2,8 +2,6 @@
 #define __WEB_DOCUMENTATION_COMPONENT__
 
 #include "JuceHeader.h"
-#include <PluginBaseClasses/IComponentView.h>
-#include "Version/CollectAuStats.h" 
 
 //==============================================================================
 class WebContentComponent    : public juce::Component,
@@ -20,14 +18,12 @@ private:
           urlString(String(cpd.mapDetails["detail"]))
     {
         setOpaque (true);
-        COLLECT_STAT("Web Viewer -> " + urlString.toStdString());
-
+        
         // Create an address box..
         addAndMakeVisible (addressTextBox);
         addressTextBox.setTextToShowWhenEmpty ("Enter a web address, e.g. http://www.audience.com", Colours::grey);
         addressTextBox.addListener (this);
         
-
         // create the actual browser component
         addAndMakeVisible (webView = new juce::WebBrowserComponent());
 

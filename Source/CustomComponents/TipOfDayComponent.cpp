@@ -24,11 +24,6 @@
 #include "TipOfDayComponent.h"
 
 
-//[MiscUserDefs] You can add your own user definitions and misc code here...
-#include <base/CoreContext.h>
-#include "AuViD/Utility/SettingsConstants.h"
-//[/MiscUserDefs]
-
 //==============================================================================
 TipOfDayComponent::TipOfDayComponent() : currentTipNumber(0)
 {
@@ -80,7 +75,7 @@ TipOfDayComponent::TipOfDayComponent() : currentTipNumber(0)
     showTipToggleButton->addListener(this);
     showTipToggleButton->setButtonText("Never show on startup (Access from Help menu)");
     bool toggleState;
-    CONFIG_MANAGER()->get(SettingsConstants::AU_ShowTipBool, toggleState);
+    //CONFIG_MANAGER()->get(SettingsConstants::AU_ShowTipBool, toggleState);
     showTipToggleButton->setToggleState(toggleState, false);
     showTipToggleButton->setColour(ToggleButton::textColourId, Colours::white);
 	showTipToggleButton->setLookAndFeel(&tbnlnf);
@@ -90,7 +85,7 @@ TipOfDayComponent::TipOfDayComponent() : currentTipNumber(0)
     imageComponent->setAlwaysOnTop(true);
 
     //[UserPreSize]
-    CONFIG_MANAGER()->get(SettingsConstants::Au_LastTipNumber, currentTipNumber);
+    //CONFIG_MANAGER()->get(SettingsConstants::Au_LastTipNumber, currentTipNumber);
     String dataFilePath = RESOURCEPATH + File::separatorString + "TipsData.xml";
     File tipDataFile(dataFilePath);
     loadTipDataFromFile(tipDataFile);
@@ -107,7 +102,7 @@ TipOfDayComponent::~TipOfDayComponent()
     currentTipNumber = currentTipNumber + 1;
     if (currentTipNumber >= tip_arr.size())
         currentTipNumber = 0;
-    CONFIG_MANAGER()->set(SettingsConstants::Au_LastTipNumber, currentTipNumber);
+    //CONFIG_MANAGER()->set(SettingsConstants::Au_LastTipNumber, currentTipNumber);
     tip_arr.clear();
     nextButton = nullptr;
     previousButton = nullptr;
@@ -235,7 +230,7 @@ void TipOfDayComponent::buttonClicked(Button* buttonThatWasClicked)
     else if (buttonThatWasClicked == showTipToggleButton)
     {
         //[UserButtonCode_toggleButton] -- add your button handler code here..
-        CONFIG_MANAGER()->set(SettingsConstants::AU_ShowTipBool, showTipToggleButton->getToggleState());
+        //CONFIG_MANAGER()->set(SettingsConstants::AU_ShowTipBool, showTipToggleButton->getToggleState());
         //[/UserButtonCode_toggleButton]
     }
 

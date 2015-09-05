@@ -1,14 +1,10 @@
 #include "stdafx.h"
-
-#include <base/CoreContext.h>
-#include "Updater/CommonUpdaterDefines.h"
 #include "FeedbackComponent.h"
-#include "Version/VersionInfo.h"
 #include "Poco/File.h"
 
 
-const String FEEDBACK_URL = "http://mpt.audience.com/Auvid/write_feedback.php";
-const String FEEDBACK_IMAGE_PATH = "\\\\mpt\\Tools_Share\\Feedback_Snapshot\\";
+const String FEEDBACK_URL = "ServerName";
+const String FEEDBACK_IMAGE_PATH = "ServerLocation";
 
 const String COMMENT        =       "Comment";
 const String EMAILID        =       "EmailId";
