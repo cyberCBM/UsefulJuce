@@ -1,5 +1,5 @@
-#ifndef AUCAL_UI_NON_MODAL_DIALOG
-#define AUCAL_UI_NON_MODAL_DIALOG
+#ifndef NON_MODAL_DIALOG
+#define NON_MODAL_DIALOG
 
 #include <boost/function.hpp>
 #include "JuceHeader.h"
@@ -25,4 +25,4 @@ private:
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (NonModalWindow)
 };
 
-#endif //AUCAL_UI_NON_MODAL_DIALOG
+#endif //NON_MODAL_DIALOG

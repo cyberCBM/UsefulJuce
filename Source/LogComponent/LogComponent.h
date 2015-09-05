@@ -1,7 +1,7 @@
 #ifndef __VIEW_LOG_WINDOW__
 #define __VIEW_LOG_WINDOW__
 
-#include "../JuceLibraryCode/JuceHeader.h"
+#include "JuceHeader.h"
 
 class LogComponent : public Component, 
                     public TableListBoxModel, 

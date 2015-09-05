@@ -3,8 +3,6 @@
     #include <Shlobj.h>
 #endif // !_WIN32
 
-
-
 LogComponent::LogComponent() :
     m_logDirBrowseBtn(nullptr)
 {
